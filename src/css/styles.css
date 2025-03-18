@@ -1,0 +1,95 @@
+html,
+body {
+  background-color: #e0e0e0;
+  font-family: "Kanit", sans-serif;
+}
+
+.current-font {
+  font-family: "Kanit", sans-serif;
+}
+
+.app-div {
+  padding: 20px;
+}
+
+.heading1 {
+  font-size: 25px;
+}
+
+.font-weight-450 {
+  font-weight: 450;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.heading2 {
+  font-size: 50px;
+}
+
+.heading3 {
+  font-size: 40px;
+}
+
+.heading4 {
+  font-size: 20px;
+}
+
+.btn-font {
+  font-size: 15px;
+}
+
+.neumorphic-card {
+  background-color: #e0e0e0 !important;
+  border-radius: 20px !important;
+  box-shadow: 8px 8px 16px #929292, -8px -8px 16px #ffffff !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+.navbar-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.navbar-div2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: end;
+}
+
+.menu-btn {
+  margin: 0 10px 0 10px;
+  padding: 10px 30px 10px 30px;
+  border-radius: 30px;
+  background: #d9d9d9;
+  border: none;
+  font-family: "Kanit", sans-serif;
+  box-shadow: inset 5px 5px 10px #a1a1a1, inset -5px -5px 10px #ffffff;
+  cursor: pointer;
+  transition: transform 0.6s ease-in-out;
+}
+
+.menu-btn:hover {
+  box-shadow: 5px 5px 10px #929292, -5px -5px 10px #ffffff !important;
+  transform: scale(1.2);
+}
+
+.line-space {
+  line-height: 50px;
+}
+
+.grey-color {
+  color: #5a626f;
+}
+
+.flex-div-type1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
