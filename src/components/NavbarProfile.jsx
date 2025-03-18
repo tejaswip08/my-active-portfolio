@@ -36,7 +36,7 @@ const NavbarProfile = () => {
                     size="1x"
                     onClick={enableDisableMenu}
                   />
-                  <span className="heading1 font-weight-450">{`<Tejaswi />`}</span>
+                  <span className="heading1 font-weight-450">{`<TejaswiP />`}</span>
                 </div>
               </Grid>
               <Grid item lg={8} md={8} sm={12} xs={12}>

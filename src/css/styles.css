@@ -131,12 +131,16 @@ body {
   border-radius: 100%;
   padding: 20px;
   transition: transform 0.6s ease-in-out;
+  border: none;
+  outline: none;
 }
 
 .display-menu-bar:hover {
   box-shadow: 5px 5px 10px #929292, -5px -5px 10px #ffffff !important;
   border-radius: 100%;
   transform: scale(1.2);
+  border: none;
+  outline: none;
 }
 
 @media (max-width: 800px) {
