@@ -135,6 +135,7 @@ body {
 
 .display-menu-bar:hover {
   box-shadow: 5px 5px 10px #929292, -5px -5px 10px #ffffff !important;
+  border-radius: 100%;
   transform: scale(1.2);
 }
 
