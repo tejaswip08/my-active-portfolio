@@ -1,5 +1,6 @@
 import React, { useState, useLayoutEffect } from "react";
 import NavbarProfile from "./NavbarProfile";
+import AboutMe from "./AboutMe";
 import { Box } from "@mui/material";
 
 const ZoomRespDiv = () => {
@@ -34,6 +35,7 @@ const ZoomRespDiv = () => {
       sx={{ mx: "auto", width: width, transition: "width 0.6s ease-in-out" }}
     >
       <NavbarProfile />
+      <AboutMe />
     </Box>
   );
 };

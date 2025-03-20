@@ -42,7 +42,7 @@ body {
 
 .neumorphic-card {
   background-color: #e0e0e0 !important;
-  border-radius: 20px !important;
+  border-radius: 50px !important;
   box-shadow: 8px 8px 16px #929292, -8px -8px 16px #ffffff !important;
   padding-left: 15px !important;
   padding-right: 15px !important;
@@ -109,12 +109,26 @@ body {
   flex-wrap: wrap;
 }
 
-.image-box {
-  width: 400px;
-  height: 400px;
+.flex-div-type2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.round-custom-img {
+  width: 350px;
+  height: 350px;
   object-fit: cover;
   border-radius: 100%;
-  background-color: #e0e0e0;
+}
+
+.image-box {
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  box-shadow: 8px 8px 16px #929292, -8px -8px 16px #ffffff !important;
+  padding: 8px;
 }
 
 .text-shadow {
@@ -129,7 +143,7 @@ body {
   cursor: pointer;
   box-shadow: inset 5px 5px 10px #a1a1a1, inset -5px -5px 10px #ffffff;
   border-radius: 100%;
-  padding: 20px;
+  /* padding: 20px 21px 20px 21px; */
   transition: transform 0.6s ease-in-out;
   border: none;
   outline: none;
@@ -143,7 +157,49 @@ body {
   outline: none;
 }
 
-@media (max-width: 800px) {
+.profile-pic-btn {
+  padding: 12px 14px 12px 14px;
+  border: none;
+  border-radius: 100%;
+  transition: transform 2s ease-in-out;
+  box-shadow: inset 5px 5px 10px #a1a1a1, inset -5px -5px 10px #ffffff;
+}
+
+.profile-pic-btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  box-shadow: 5px 5px 10px #929292, -5px -5px 10px #ffffff !important;
+}
+
+.profile-pic-font {
+  font-size: 25px;
+}
+
+/* .typing-animation {
+  display: inline-block; 
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid black; 
+  width: 0;
+  animation: typing 3s steps(30, end) forwards, blink 0.6s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+} */
+
+@media (max-width: 900px) {
   .display-menu-bar {
     display: inline;
   }

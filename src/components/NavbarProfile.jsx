@@ -1,10 +1,16 @@
-import React, { useState } from "react";
-import { Card, CardContent } from "@mui/material";
+import React, { useState, useEffect } from "react";
+
+import { Card, CardContent, Box } from "@mui/material";
 import Grid from "@mui/material/Grid";
-// import myImage from "../assets/teju.jpg";
+import Tooltip from "@mui/material/Tooltip";
+
+import myImage from "../assets/profile-pic2.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBarsStaggered, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 const menuBtns = [
   { btn_name: "Home", path: "/" },
@@ -19,7 +25,10 @@ const NavbarProfile = () => {
   });
 
   const enableDisableMenu = () => {
-    setState({ menuBtnEnabled: !state.menuBtnEnabled });
+    setState((prevState) => ({
+      ...prevState,
+      menuBtnEnabled: !prevState.menuBtnEnabled,
+    }));
   };
 
   return (
@@ -32,11 +41,16 @@ const NavbarProfile = () => {
                 <div>
                   <FontAwesomeIcon
                     className="display-menu-bar"
+                    style={
+                      state.menuBtnEnabled
+                        ? { padding: "20px 22px 20px 22px" }
+                        : { padding: "20px" }
+                    }
                     icon={state.menuBtnEnabled ? faXmark : faBarsStaggered}
                     size="1x"
                     onClick={enableDisableMenu}
                   />
-                  <span className="heading1 font-weight-450">{`<TejaswiP />`}</span>
+                  <span className="heading1 font-weight-450">{`<Tejaswi />`}</span>
                 </div>
               </Grid>
               <Grid item lg={8} md={8} sm={12} xs={12}>
@@ -58,7 +72,7 @@ const NavbarProfile = () => {
           </nav>
         </CardContent>
       </Card>
-      <Card className="neumorphic-card" elevation={0} sx={{ mt: 3, p: 15 }}>
+      <Card className="neumorphic-card" elevation={0} sx={{ mt: 3, p: 5 }}>
         <CardContent>
           <Grid container spacing={0} sx={{ alignItems: "center" }}>
             <Grid item xs={12} sm={12} md={8} lg={8} sx={{ p: 0 }}>
@@ -67,7 +81,10 @@ const NavbarProfile = () => {
                   Hello,
                 </div>
                 <div className="heading2 font-weight-600 line-space text-shadow">
-                  I'm a Front End Web Developer
+                  I'm a{" "}
+                  <span className="typing-animation">
+                    Front End Web Developer
+                  </span>
                 </div>
                 <div className="heading4 line-space grey-color">
                   I'm Tejaswi, Professional Web Developer. Need any help?
@@ -102,16 +119,51 @@ const NavbarProfile = () => {
                 </div>
               </div>
             </Grid>
-            <Grid item xs={12} sm={12} md={4} lg={4} sx={{ p: 0 }}>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptates, temporibus accusantium. Quod dolores nam corporis eos
-              dicta amet debitis accusantium, minima cum expedita tempore neque
-              minus iure ipsa animi rem similique quos, earum, iusto itaque vel.
-              Molestias natus deserunt, fugiat eaque accusamus sit explicabo,
-              odit ducimus recusandae id cupiditate similique?
-              {/* <Box className="image-box" sx={{ p: 2 }}>
-                <img className="image-box" src={myImage} />
-              </Box> */}
+            <Grid
+              item
+              xs={12}
+              sm={12}
+              md={4}
+              lg={4}
+              sx={{ p: 0, display: "flex", justifyContent: "end" }}
+            >
+              <Box>
+                <Box className="image-box">
+                  <img src={myImage} className="round-custom-img" />
+                </Box>
+                <Box className="flex-div-type2" sx={{ mt: 3 }}>
+                  <Tooltip title="GitHub" arrow>
+                    <button
+                      style={{ marginRight: "20px" }}
+                      className="profile-pic-btn"
+                    >
+                      <FontAwesomeIcon
+                        icon={faGithub}
+                        className="profile-pic-font"
+                      />
+                    </button>
+                  </Tooltip>
+                  <Tooltip title="LinkedIn" arrow>
+                    <button
+                      style={{ marginRight: "20px" }}
+                      className="profile-pic-btn"
+                    >
+                      <FontAwesomeIcon
+                        icon={faLinkedin}
+                        className="profile-pic-font"
+                      />
+                    </button>
+                  </Tooltip>
+                  <Tooltip title="Instagram" arrow>
+                    <button className="profile-pic-btn">
+                      <FontAwesomeIcon
+                        icon={faInstagram}
+                        className="profile-pic-font"
+                      />
+                    </button>
+                  </Tooltip>
+                </Box>
+              </Box>
             </Grid>
           </Grid>
         </CardContent>
