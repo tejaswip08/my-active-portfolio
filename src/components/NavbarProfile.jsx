@@ -8,9 +8,11 @@ import myImage from "../assets/profile-pic2.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBarsStaggered, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 const menuBtns = [
   { btn_name: "Home", path: "/" },
@@ -75,24 +77,32 @@ const NavbarProfile = () => {
       <Card className="neumorphic-card" elevation={0} sx={{ mt: 3, p: 5 }}>
         <CardContent>
           <Grid container spacing={0} sx={{ alignItems: "center" }}>
-            <Grid item xs={12} sm={12} md={8} lg={8} sx={{ p: 0 }}>
+            <Grid
+              item
+              xs={12}
+              sm={12}
+              md={8}
+              lg={8}
+              sx={{ p: 0 }}
+              className="nav-profile-firstcol"
+            >
               <div>
-                <div className="heading3 font-weight-450 line-space text-shadow">
+                <div className="heading3 font-weight-400 line-space text-shadow ">
                   Hello,
                 </div>
-                <div className="heading2 font-weight-600 line-space text-shadow">
-                  I'm a{" "}
-                  <span className="typing-animation">
+                <div className="heading2 font-weight-500 line-space text-shadow">
+                  I'm a Front End Web Developer
+                  {/* <span className="typing-animation">
                     Front End Web Developer
-                  </span>
+                  </span> */}
                 </div>
-                <div className="heading4 line-space grey-color">
+                <div className="heading4 line-space grey-color np-fc">
                   I'm Tejaswi, Professional Web Developer. Need any help?
                 </div>
                 <div className="flex-div-type1" style={{ marginTop: "20px" }}>
                   <div style={{ marginRight: "30px" }}>
                     <button
-                      className="menu-btn"
+                      className="menu-btn profile-btn-resp1"
                       style={{
                         border: "2px solid #5a626f",
                         paddingLeft: "60px",
@@ -125,7 +135,7 @@ const NavbarProfile = () => {
               sm={12}
               md={4}
               lg={4}
-              sx={{ p: 0, display: "flex", justifyContent: "end" }}
+              className="nav-profile-secondcol"
             >
               <Box>
                 <Box className="image-box">

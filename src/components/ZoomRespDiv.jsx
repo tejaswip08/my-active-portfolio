@@ -1,6 +1,9 @@
 import React, { useState, useLayoutEffect } from "react";
 import NavbarProfile from "./NavbarProfile";
 import AboutMe from "./AboutMe";
+// import ContactMe from "./ContactMe";
+import MyEnjoyments from "./MyEnjoyments";
+import FooterCard from "./FooterCard";
 import { Box } from "@mui/material";
 
 const ZoomRespDiv = () => {
@@ -36,6 +39,9 @@ const ZoomRespDiv = () => {
     >
       <NavbarProfile />
       <AboutMe />
+      {/* <ContactMe /> */}
+      <MyEnjoyments />
+      <FooterCard />
     </Box>
   );
 };
