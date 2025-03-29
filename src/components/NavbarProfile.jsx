@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-scroll";
 
 import { Card, CardContent, Box } from "@mui/material";
 import Grid from "@mui/material/Grid";
@@ -14,10 +15,12 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
+import myResume from "../assets/Tejaswi_FrontEnd_Resume.pdf";
+
 const menuBtns = [
   { btn_name: "Home", path: "/" },
-  { btn_name: "About", path: "/" },
-  { btn_name: "Portfolio", path: "/" },
+  { btn_name: "About", path: "about" },
+  { btn_name: "Portfolio", path: "enjoyments" },
   { btn_name: "Contact", path: "/" },
 ];
 
@@ -63,9 +66,11 @@ const NavbarProfile = () => {
                 >
                   {menuBtns.map((item, index) => (
                     <div key={index}>
-                      <button className="menu-btn btn-font">
-                        {item.btn_name}
-                      </button>
+                      <Link to={item.path}>
+                        <button className="menu-btn btn-font">
+                          {item.btn_name}
+                        </button>
+                      </Link>
                     </div>
                   ))}
                 </div>
@@ -114,17 +119,19 @@ const NavbarProfile = () => {
                     </button>
                   </div>
                   <div style={{ marginLeftt: "30px" }}>
-                    <button
-                      className="menu-btn"
-                      style={{
-                        border: "2px solid #5a626f",
-                        paddingLeft: "60px",
-                        paddingRight: "60px",
-                        margin: "0",
-                      }}
-                    >
-                      View Resume
-                    </button>
+                    <a href={myResume} download="Tejaswi_FrontEnd_Resume.pdf">
+                      <button
+                        className="menu-btn"
+                        style={{
+                          border: "2px solid #5a626f",
+                          paddingLeft: "60px",
+                          paddingRight: "60px",
+                          margin: "0",
+                        }}
+                      >
+                        View Resume
+                      </button>
+                    </a>
                   </div>
                 </div>
               </div>

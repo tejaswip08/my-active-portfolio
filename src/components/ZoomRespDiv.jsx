@@ -5,6 +5,7 @@ import AboutMe from "./AboutMe";
 import MyEnjoyments from "./MyEnjoyments";
 import FooterCard from "./FooterCard";
 import { Box } from "@mui/material";
+import { Element } from "react-scroll";
 
 const ZoomRespDiv = () => {
   const [width, setWidth] = useState("100%");
@@ -38,10 +39,16 @@ const ZoomRespDiv = () => {
       sx={{ mx: "auto", width: width, transition: "width 0.6s ease-in-out" }}
     >
       <NavbarProfile />
-      <AboutMe />
+      <Element name="about">
+        <AboutMe />
+      </Element>
       {/* <ContactMe /> */}
-      <MyEnjoyments />
-      <FooterCard />
+      <Element name="enjoyments">
+        <MyEnjoyments />
+      </Element>
+      <Element name="footer">
+        <FooterCard />
+      </Element>
     </Box>
   );
 };
