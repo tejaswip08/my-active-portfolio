@@ -150,34 +150,43 @@ const NavbarProfile = () => {
                 </Box>
                 <Box className="flex-div-type2" sx={{ mt: 3 }}>
                   <Tooltip title="GitHub" arrow>
-                    <button
-                      style={{ marginRight: "20px" }}
-                      className="profile-pic-btn"
-                    >
-                      <FontAwesomeIcon
-                        icon={faGithub}
-                        className="profile-pic-font"
-                      />
-                    </button>
+                    <a href="https://github.com/tejaswipsagar">
+                      <button
+                        style={{ marginRight: "20px" }}
+                        className="profile-pic-btn"
+                      >
+                        <FontAwesomeIcon
+                          icon={faGithub}
+                          className="profile-pic-font"
+                        />
+                      </button>
+                    </a>
                   </Tooltip>
                   <Tooltip title="LinkedIn" arrow>
-                    <button
-                      style={{ marginRight: "20px" }}
-                      className="profile-pic-btn"
-                    >
-                      <FontAwesomeIcon
-                        icon={faLinkedin}
-                        className="profile-pic-font"
-                      />
-                    </button>
+                    <a href="https://www.linkedin.com/in/tejaswi-sagar/">
+                      <button
+                        style={{ marginRight: "20px" }}
+                        className="profile-pic-btn"
+                      >
+                        <FontAwesomeIcon
+                          icon={faLinkedin}
+                          className="profile-pic-font"
+                        />
+                      </button>
+                    </a>
                   </Tooltip>
                   <Tooltip title="Instagram" arrow>
-                    <button className="profile-pic-btn">
-                      <FontAwesomeIcon
-                        icon={faInstagram}
-                        className="profile-pic-font"
-                      />
-                    </button>
+                    <a
+                      href="https://www.instagram.com/tejaswi.sagar/
+         "
+                    >
+                      <button className="profile-pic-btn">
+                        <FontAwesomeIcon
+                          icon={faInstagram}
+                          className="profile-pic-font"
+                        />
+                      </button>
+                    </a>
                   </Tooltip>
                 </Box>
               </Box>
