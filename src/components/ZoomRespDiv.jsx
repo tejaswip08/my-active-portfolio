@@ -42,7 +42,9 @@ const ZoomRespDiv = () => {
       <Element name="about">
         <AboutMe />
       </Element>
-      <ContactMe />
+      <Element name="contactme">
+        <ContactMe />
+      </Element>
       <Element name="enjoyments">
         <MyEnjoyments />
       </Element>

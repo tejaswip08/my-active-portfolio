@@ -21,7 +21,7 @@ const menuBtns = [
   { btn_name: "Home", path: "/" },
   { btn_name: "About", path: "about" },
   { btn_name: "Portfolio", path: "enjoyments" },
-  { btn_name: "Contact", path: "/" },
+  { btn_name: "Contact", path: "contactme" },
 ];
 
 const NavbarProfile = () => {
@@ -106,17 +106,19 @@ const NavbarProfile = () => {
                 </div>
                 <div className="flex-div-type1" style={{ marginTop: "20px" }}>
                   <div style={{ marginRight: "30px" }}>
-                    <button
-                      className="menu-btn profile-btn-resp1"
-                      style={{
-                        border: "2px solid #5a626f",
-                        paddingLeft: "60px",
-                        paddingRight: "60px",
-                        margin: "0",
-                      }}
-                    >
-                      Hire Me
-                    </button>
+                    <Link to="contactme">
+                      <button
+                        className="menu-btn profile-btn-resp1"
+                        style={{
+                          border: "2px solid #5a626f",
+                          paddingLeft: "60px",
+                          paddingRight: "60px",
+                          margin: "0",
+                        }}
+                      >
+                        Hire Me
+                      </button>
+                    </Link>
                   </div>
                   <div style={{ marginLeftt: "30px" }}>
                     <a href={myResume} download="Tejaswi_FrontEnd_Resume.pdf">
