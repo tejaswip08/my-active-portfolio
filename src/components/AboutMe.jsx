@@ -31,7 +31,7 @@ const AboutMe = () => {
           <Grid container spacing={4} sx={{ alignItems: "center" }}>
             <Grid item xs={12} sm={12} md={8} lg={8} sx={{ p: 0 }}>
               <div className="heading2 font-weight-500 line-space text-shadow">
-                Who Am I_
+                Who Am I
               </div>
               <Box
                 className="heading4  grey-color"
@@ -86,7 +86,7 @@ const AboutMe = () => {
           </Grid>
           <Box sx={{ mt: 10 }}>
             <div className="heading2 font-weight-500 line-space text-shadow">
-              Specialized In_
+              Specialized In
             </div>
           </Box>
           <Box sx={{ mt: 3 }} className="flex-div-type2">

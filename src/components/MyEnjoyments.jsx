@@ -19,25 +19,23 @@ const MyEnjoyments = () => {
     <>
       <Card className="neumorphic-card" elevation={0} sx={{ mt: 3, p: 5 }}>
         <CardContent>
-          <div>
-            <div className="heading2 font-weight-500 line-space text-shadow">
-              Enjoyments_
-            </div>
-            <div className="navbar-div2-type2">
-              <Box className="navbar-div navbar-div-resp" sx={{ mt: 5 }}>
-                {enjoyLogos.map((item, index) => (
-                  <Tooltip key={index} title={item.desc} arrow>
-                    <div className="enjoy-icon-div">
-                      <FontAwesomeIcon
-                        icon={item.icon}
-                        size="8x"
-                        className="grey-color"
-                      />
-                    </div>
-                  </Tooltip>
-                ))}
-              </Box>
-            </div>
+          <div className="heading2 font-weight-500 line-space text-shadow">
+            My Enjoyments
+          </div>
+          <div className="navbar-div2-type2">
+            <Box className="navbar-div navbar-div-resp" sx={{ mt: 5 }}>
+              {enjoyLogos.map((item, index) => (
+                <Tooltip key={index} title={item.desc} arrow>
+                  <div className="enjoy-icon-div">
+                    <FontAwesomeIcon
+                      icon={item.icon}
+                      size="8x"
+                      className="grey-color"
+                    />
+                  </div>
+                </Tooltip>
+              ))}
+            </Box>
           </div>
         </CardContent>
       </Card>

@@ -1,7 +1,7 @@
 import React, { useState, useLayoutEffect } from "react";
 import NavbarProfile from "./NavbarProfile";
 import AboutMe from "./AboutMe";
-// import ContactMe from "./ContactMe";
+import ContactMe from "./ContactMe";
 import MyEnjoyments from "./MyEnjoyments";
 import FooterCard from "./FooterCard";
 import { Box } from "@mui/material";
@@ -42,7 +42,7 @@ const ZoomRespDiv = () => {
       <Element name="about">
         <AboutMe />
       </Element>
-      {/* <ContactMe /> */}
+      <ContactMe />
       <Element name="enjoyments">
         <MyEnjoyments />
       </Element>
