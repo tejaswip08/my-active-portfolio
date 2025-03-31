@@ -67,7 +67,10 @@ const NavbarProfile = () => {
                   {menuBtns.map((item, index) => (
                     <div key={index}>
                       <Link to={item.path} smooth={true} duration={1500}>
-                        <button className="menu-btn btn-font">
+                        <button
+                          className="menu-btn btn-font"
+                          style={{ width: "clamp(130px, 20vw, 130px)" }}
+                        >
                           {item.btn_name}
                         </button>
                       </Link>
