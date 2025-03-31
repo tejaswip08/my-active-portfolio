@@ -300,7 +300,7 @@ body {
 
 @media (max-width: 500px) {
   .app-div {
-    padding: 12px;
+    padding: 10px;
   }
   .neumorphic-card {
     padding-left: 10px !important;
