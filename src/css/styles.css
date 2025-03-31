@@ -298,6 +298,16 @@ body {
   }
 }
 
+@media (max-width: 500px) {
+  .app-div {
+    padding: 12px;
+  }
+  .neumorphic-card {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
 @media (max-width: 617px) {
   .np-fc {
     line-height: 25px;

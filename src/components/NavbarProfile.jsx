@@ -66,7 +66,7 @@ const NavbarProfile = () => {
                 >
                   {menuBtns.map((item, index) => (
                     <div key={index}>
-                      <Link to={item.path}>
+                      <Link to={item.path} smooth={true} duration={1500}>
                         <button className="menu-btn btn-font">
                           {item.btn_name}
                         </button>
@@ -106,7 +106,7 @@ const NavbarProfile = () => {
                 </div>
                 <div className="flex-div-type1" style={{ marginTop: "20px" }}>
                   <div style={{ marginRight: "30px" }}>
-                    <Link to="contactme">
+                    <Link to="contactme" smooth={true} duration={1500}>
                       <button
                         className="menu-btn profile-btn-resp1"
                         style={{
