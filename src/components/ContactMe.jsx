@@ -23,9 +23,14 @@ const ContactMe = () => {
     formState: { errors },
   } = useForm({ resolver: yupResolver(formsSchema), mode: "onTouched" });
 
-  const formData = () => {
-    //
+  const formData = (data) => {
+    const { name, email, message } = data;
+    const formattedMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+    const phoneNumber = "916363151733";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${formattedMessage}`;
+    window.open(whatsappUrl, "_blank");
   };
+
   return (
     <>
       <Card elevation={0} className="neumorphic-card" sx={{ mt: 3, p: 5 }}>
