@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio website! This project showcases my skills, projects, and contact information in a clean, responsive, and modern interface built using **React.js** and modern frontend practices.
 
-![Portfolio Screenshot](./preview.png) <!-- Replace with actual path to screenshot -->
+🌐 **Live Demo**: [https://tejaswiportfolioweb.vercel.app/](https://tejaswiportfolioweb.vercel.app/)
 
 ---
 
