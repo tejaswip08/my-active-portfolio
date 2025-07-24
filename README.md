@@ -1,12 +1,50 @@
-# React + Vite
+# 👨‍💻 Tejaswi | Front End Web Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This project showcases my skills, projects, and contact information in a clean, responsive, and modern interface built using **React.js** and modern frontend practices.
 
-Currently, two official plugins are available:
+![Portfolio Screenshot](./preview.png) <!-- Replace with actual path to screenshot -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Built With
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ React.js
+- 🌐 HTML5, CSS3
+- 🎨 Custom CSS styling with modern UI design
+- 🎯 Responsive layout (mobile-friendly)
+- 🔗 FontAwesome/React-Icons for icons
+
+---
+
+## 📌 Features
+
+- 🧑‍💻 **About Me Section**  
+  Brief introduction about myself as a professional frontend web developer.
+
+- 💼 **Portfolio/Skills Section**  
+  Highlights my core frontend skills like React.js, Vue.js, JavaScript, HTML, CSS.
+
+- 📞 **Contact Form**  
+  Functional contact form with fields for Name, Email, and Message.
+
+- 📷 **Profile Image**  
+  Rounded profile image with social media links (LinkedIn, GitHub, Instagram).
+
+- ☁️ **Glassmorphism UI**  
+  Modern UI inspired by glassmorphism and neumorphism design trends.
+
+- 📱 **Fully Responsive**  
+  Designed to look great on desktops, tablets, and smartphones.
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have Node.js and npm installed.
+
+```bash
+node -v
+npm -v
+```

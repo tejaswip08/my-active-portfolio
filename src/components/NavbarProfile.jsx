@@ -155,7 +155,7 @@ const NavbarProfile = () => {
                 </Box>
                 <Box className="flex-div-type2" sx={{ mt: 3 }}>
                   <Tooltip title="GitHub" arrow>
-                    <a href="https://github.com/tejaswipsagar">
+                    <a href="https://github.com/tejaswip08">
                       <button
                         style={{ marginRight: "20px" }}
                         className="profile-pic-btn"
